@@ -90,4 +90,22 @@ const lesson14 = require('./lessons/14_express_http');
   Serving Static Files with Express
   ---------------------------*/
 const lesson15 = require('./lessons/15_express_static_files');
-lesson15.startExpress();
+//lesson15.startExpress();
+
+/*---------------------------
+  Http Post Request with Express and Body Parser Module
+  ---------------------------*/
+const lesson16 = require('./lessons/16_express_post_request');
+//lesson16.startExpress();
+
+/*---------------------------
+  Working with JSON Data with Express and the Body Parser Module
+  ---------------------------*/
+const lesson17 = require('./lessons/17_json_body_parser');
+//lesson17.startExpress();
+
+/*---------------------------
+  User Input Validation With Express And JOI
+  ---------------------------*/
+const lesson18 = require('./lessons/18_input_validation_joi');
+lesson18.startExpress();
