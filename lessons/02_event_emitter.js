@@ -1,11 +1,11 @@
 const EventEmitter = require('events');
 const eventEmitter = new EventEmitter();
 
-eventEmitter.on('tutorial', (num1, num2)=> {
-    console.log(num1 + num2);
-});
+exports.emitEvent = function(num1, num2) {
+    eventEmitter.on('tutorial', ()=> {
+        console.log(num1 + num2);
+    });
 
-const emitEvent = (num1, num2)=> {
     eventEmitter.emit('tutorial',num1,num2);
 }
 
@@ -20,20 +20,22 @@ class Person extends EventEmitter {
     }
 }
 
-let pedro = new Person('Pedro');
-let mat = new Person('Mat');
-pedro.on('name', ()=> {
-    console.log('My name is ' + pedro.name);
-})
-mat.on('name', ()=> {
-    console.log('My name is ' + mat.name);
-})
+exports.pedro = function() {
+    let pedro = new Person('Pedro');
 
-const pedroEmit = pedro.emit('name');
-const matEmit = mat.emit('name');
+    pedro.on('name', ()=> {
+        console.log('My name is ' + pedro.name);
+    });
 
-module.exports = {
-    emitEvent : emitEvent,
-    pedroEmit : pedroEmit,
-    matEmit : matEmit
+    const pedroEmit = pedro.emit('name');
+}
+
+exports.mat = function() {
+    let mat = new Person('Mat');
+
+    mat.on('name', ()=> {
+        console.log('My name is ' + mat.name);
+    })
+
+    const matEmit = mat.emit('name');
 }
