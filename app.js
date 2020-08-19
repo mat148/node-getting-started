@@ -51,8 +51,43 @@ const lesson06 = require('./lessons/06_read_write_stream');
 const lesson07 = require('./lessons/07_pipes_pipe_chaining');
 //lesson07.pipeStream();
 //lesson07.zipFile();
-lesson07.unzipFile();
+//lesson07.unzipFile();
 
 /*---------------------------
   Creating a Http Server using the Http Module
   ---------------------------*/
+const lesson08 = require('./lessons/08_http_server');
+//lesson08.createHttpServer();
+
+/*---------------------------
+  Serving Static Files with Http and File System Module (html,json,image)
+  ---------------------------*/
+const lesson09 = require('./lessons/09_http_static_files');
+//lesson09.showHtml();
+//lesson09.showJson();
+//lesson09.showImage();
+
+/*---------------------------
+  Installing Packages using Npm (Node Package Manager)
+  ---------------------------*/
+const _ = require('lodash');
+//let example = _.fill([1,2,3,4,5], "banana", 1, 4);
+//console.log(example);
+
+/*---------------------------
+  Getting started with Express Web Framework
+  ---------------------------*/
+const lesson13 = require('./lessons/13_start_express');
+//lesson13.startExpress();
+
+/*---------------------------
+  Working with Express Http Get Request, Route Params and Query Strings
+  ---------------------------*/
+const lesson14 = require('./lessons/14_express_http');
+//lesson14.startExpress();
+
+/*---------------------------
+  Serving Static Files with Express
+  ---------------------------*/
+const lesson15 = require('./lessons/15_express_static_files');
+lesson15.startExpress();
