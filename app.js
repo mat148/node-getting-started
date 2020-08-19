@@ -1,61 +1,18 @@
 /*---------------------------
-  This was from the Node.js getting started documentation
-  Also calling a function from tutorial.js
+  calling a function from tutorial.js
   ---------------------------*/
-/*const tutorial = require('./tutorial');
-
-const http = require('http');
-
-const hostname = '127.0.0.1';
-const port = 3000;
-
-const server = http.createServer((req, res) => {
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/plain');
-    //res.end('Hello World');
-    //console.log(tutorial);
-    //console.log(tutorial(1,1));
-});
-
-server.listen(port, hostname, () => {
-    console.log(`Server running at http://${hostname}:${port}/`);
-    //console.log(tutorial(1,1));
-});*/
+const lesson01 = require('./lessons/01_calling_function');
+//console.log(lesson01.sum(1,1));
+//console.log(lesson01.PI);
+//console.log(new lesson01.SomeMathObject());
 
 /*---------------------------
   EVENT EMITTER
   ---------------------------*/
-/*const EventEmitter = require('events');
-const eventEmitter = new EventEmitter();
-
-eventEmitter.on('tutorial', (num1, num2)=> {
-    console.log(num1 + num2);
-});
-
-eventEmitter.emit('tutorial',1,2);
-
-class Person extends EventEmitter {
-    constructor(name) {
-        super();
-        this._name = name;
-    }
-
-    get name() {
-        return this._name;
-    }
-}
-
-let pedro = new Person('Pedro');
-let mat = new Person('Mat');
-pedro.on('name', ()=> {
-    console.log('My name is ' + pedro.name);
-})
-mat.on('name', ()=> {
-    console.log('My name is ' + mat.name);
-})
-
-pedro.emit('name');
-mat.emit('name');*/
+const lesson02 = require('./lessons/02_event_emitter');
+//lesson02.emitEvent(3, 3);
+//lesson02.pedroEmit;
+//lesson02.matEmit;
 
 /*---------------------------
   READLINE
