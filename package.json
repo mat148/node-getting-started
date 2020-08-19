@@ -1,7 +1,7 @@
 {
   "name": "getting-started",
   "version": "1.0.0",
-  "description": "Tutorial",
+  "description": "- All lessons are commented out within app.js.\r - Need to move each lesson into its own file.",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/mat148/node-getting-started.git"
   },
-  "author": "Mattew Morse",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/mat148/node-getting-started/issues"
