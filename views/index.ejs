@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <h1>You searched for: <%= data.userQuery %></h1>
+        <% if(data.loggedIn){ %>
+            <h2>you are logged in as: <%= data.username %></h2>
+            <ul>
+                <!-- if we dont want this string to output to the html file use <% %> with no = -->
+                <% data.searchResults.forEach(result=>{ %>
+                    <li> <%= result %> </li>
+                <% }); %>
+            </ul>
+        <% } %>
+    </body>
+</html>

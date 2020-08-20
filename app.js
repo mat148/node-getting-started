@@ -108,4 +108,22 @@ const lesson17 = require('./lessons/17_json_body_parser');
   User Input Validation With Express And JOI
   ---------------------------*/
 const lesson18 = require('./lessons/18_input_validation_joi');
-lesson18.startExpress();
+//lesson18.startExpress();
+
+/*---------------------------
+  User Input Validation with JOI Validating Nested Object and Arrays
+  ---------------------------*/
+const lesson19 = require('./lessons/19_joi_object_arrays');
+//lesson19.startJoi();
+
+/*---------------------------
+  Getting Started With EJS Templates With Express
+  ---------------------------*/
+const lesson20 = require('./lessons/20_ejs_template');
+//lesson20.startEJS();
+
+/*---------------------------
+  How does MiddleWare Work and Creating Custom Middleware
+  ---------------------------*/
+const lesson21 = require('./lessons/21_middleware');
+lesson21.middleware();
