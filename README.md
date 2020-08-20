@@ -1,4 +1,5 @@
 # Learning Node.js
+- 100% complete
 - All lessons are commented out within app.js.
 - ~~Need to move each lesson into its own file.~~
 
@@ -21,6 +22,7 @@
 - Lesson 19 JOI object arrays
 - Lesson 20 EJS templating
 - Lesson 21 Middleware
+- Lesson 22 Express Router
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)

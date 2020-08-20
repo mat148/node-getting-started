@@ -126,4 +126,10 @@ const lesson20 = require('./lessons/20_ejs_template');
   How does MiddleWare Work and Creating Custom Middleware
   ---------------------------*/
 const lesson21 = require('./lessons/21_middleware');
-lesson21.middleware();
+//lesson21.middleware();
+
+/*---------------------------
+  Working With The Express Router
+  ---------------------------*/
+const lesson22 = require('./lessons/22_express_router');
+//lesson22.startRouter();

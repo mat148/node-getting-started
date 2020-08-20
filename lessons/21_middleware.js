@@ -14,12 +14,15 @@ exports.middleware = function() {
     });*/
 
     //This middleware will execute on any method using this route
+    //middleware can modify the request and response
     app.use('/example', (req, res, next)=>{
-        console.log(req.url, req.method);
+        //console.log(req.url, req.method);
+        //req.banana = 'banana';
         next();
     });
    
     app.get('/', (req, res)=> {
+        //console.log(req.banana);
         res.send("Hello World");
     });
 
