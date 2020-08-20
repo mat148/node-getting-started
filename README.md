@@ -3,6 +3,7 @@
 - All lessons are commented out within app.js.
 - ~~Need to move each lesson into its own file.~~
 
+## Lessons
 - Lesson 01 Calling functions from another file
 - Lesson 02 Event emitter
 - Lesson 03 Readline
